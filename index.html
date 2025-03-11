@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Đăng Nhập và Đăng Ký</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Lê Hoàng Anh</h1> <!-- Thêm tên của bạn -->
+    <div class="form-container">
+      <div class="form-toggle">
+        <button id="login-btn" class="active">Đăng Nhập</button>
+        <button id="register-btn">Đăng Ký</button>
+      </div>
+      <form id="login-form" class="form active">
+        <input type="text" name="username" placeholder="Tên đăng nhập" required>
+        <input type="password" name="password" placeholder="Mật khẩu" required>
+        <button type="submit">Đăng Nhập</button>
+      </form>
+      <form id="register-form" class="form">
+        <input type="text" name="username" placeholder="Tên đăng nhập" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Mật khẩu" required>
+        <input type="password" name="confirm-password" placeholder="Xác nhận mật khẩu" required>
+        <button type="submit">Đăng Ký</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

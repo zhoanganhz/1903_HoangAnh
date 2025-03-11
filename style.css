@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #007bff; /* Thêm khung */
+    background-color: #e6f7ff; /* Thêm màu nền */
+    border-radius: 8px; /* Bo tròn góc */
+    padding: 20px; /* Thêm khoảng cách bên trong */
+    text-align: center; /* Căn giữa nội dung */
+  }
+  
+  .title {
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    font-size: 24px; /* Kích thước chữ */
+    color: #007bff; /* Màu chữ */
+  }
+  
+  .form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd; /* Thêm khung */
+  }
+  
+  .form-toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .form-toggle button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #ddd; /* Thêm khung */
+  }
+  
+  .form-toggle button.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .form {
+    display: none;
+  }
+  
+  .form.active {
+    display: block;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Thêm màu nền */
+  }
+  
+  .form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form button:hover {
+    background-color: #0056b3;
+  }
